@@ -3,6 +3,7 @@ import random
 import time  # For seeding the random
 
 pile = []
+random.seed(int(time.time()))
 
 while 1:
   data = raw_input("What are the options? ")
