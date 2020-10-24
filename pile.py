@@ -24,8 +24,7 @@ class PileGen:
 
   def get(self, keep=None):
     """Get an option from the Pile, optionally choosing to delete"""
-    index = random.randint(0, len(self.pile_list)-1)
-    result = self.pile_list[index]
+    result = random.choice(self.pile_list)
     if keep is None:
       self.update(result)
     return str(result)
